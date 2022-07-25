@@ -24,11 +24,15 @@ code {
 h3{
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: rgb(97, 97, 97)
+  color: rgb(97, 97, 97);
 }
 
 h4{
   font-size: 1rem;
   margin-bottom: 2rem;
-  color: rgb(97, 97, 97)
+  color: rgb(97, 97, 97);
+}
+
+h2{
+  color: rgb(97, 97, 97);
 }
