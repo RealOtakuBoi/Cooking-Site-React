@@ -18,7 +18,13 @@ function Cusine() {
     getCusine(params.type);
   },[params.type])
   return (
-    <Grid>
+    <Grid
+    animate={{opacity:1}}
+    initial={{opacity:0}}
+    exit={{opacity:0}}
+    transition={{duration:0.5}}
+    
+    >
       {cusine.map(item => {
         return(
           <Card key={item.id}>
@@ -33,7 +39,7 @@ function Cusine() {
   )
 }
 
-const Grid = styled.div`
+const Grid = styled(motion.div)`
 grid-template-columns: 1fr 1fr 1fr; 
 grid-template-rows: 1fr 1fr 1fr; 
 gap: 3rem;
